@@ -1,0 +1,51 @@
+.ico-question {
+  background: url("../img/question.svg") no-repeat center center;
+  background-size: contain;
+  padding: 3px 20px;
+  width: 34px;
+  height: 51px;
+  margin: -30px 30px;
+  position: absolute;
+
+  @include media(mobile) {
+    background: url("../img/question-mb.svg") no-repeat center center;
+    background-size: contain;
+    transform: scale(0.7);
+    margin: -30px 0;
+    width: 34px;
+    height: 51px;
+  }
+}
+
+.bg-rays {
+  background: url("../img/bg-rays.png") no-repeat 90% center;
+  padding: 3px 20px;
+  width: 206px;
+  height: 289px;
+  position: absolute;
+  margin: -75px 365px;
+
+  @include media(mobile) {
+    position: absolute;
+    margin: -112px -22px;
+    right: 0;
+    transform: scale(0.7);
+    padding: 0;
+  }
+}
+
+.ico-search {
+  background: url("../img/search.svg") no-repeat center center;
+  background-size: contain;
+  padding: 3px 20px;
+  width: 245px;
+  height: 182px;
+  margin: -250px 560px;
+  position: absolute;
+
+  @include media(mobile) {
+    width: 120px;
+    height: 100px;
+    margin: -90px 230px;
+  }
+}

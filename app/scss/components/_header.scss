@@ -1,0 +1,67 @@
+header {
+  @include media(mobile) {
+    height: 100px;
+  }
+
+  .header-content {
+    width: 100%;
+    height: 271px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    @include media(mobile) {
+      width: 50%;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    .air {
+      width: 167px;
+      height: 550px;
+      position: relative;
+      top: -10px;
+      left: -82px;
+
+      @include media(mobile) {
+        transform: scale(0.4);
+        position: absolute;
+        left: -45px;
+        top: -67px;
+        z-index: -1;
+      }
+
+      &:last-of-type {
+        left: 0;
+        right: -82px;
+        top: -13px;
+
+        @include media(mobile) {
+          transform: scale(0.4);
+          z-index: -1;
+          top: -69px;
+          left: auto;
+          right: -50px;
+          position: absolute;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.overlay {
+  background: url("../img/bg-full.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.6;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: -1030px;
+  z-index: -1;
+}

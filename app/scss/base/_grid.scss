@@ -1,0 +1,44 @@
+@import "../utils/variables";
+@import "./typography";
+
+/* ------------------------------------------------------------ *\
+	base
+\* ------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1366px;
+  background-image: url("../img/bg-full.jpg");
+  //   @include fontDefault;
+  //   color: $neutral-dark;
+  // overflow-x: hidden;
+  @media only screen and (max-width: 1023px) {}
+}
+
+/* ------------------------------------------------------------ *\
+	shell
+\* ------------------------------------------------------------ */
+.shell {
+  max-width: 1557px;
+  margin: 0 auto;
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------ *\
+	wrapper
+\* ------------------------------------------------------------ */
+.wrapper {
+  min-height: 100vh;
+
+  /* Tablet Portrait */
+  @media (max-width: 1023px) {
+    overflow: hidden;
+  }
+}

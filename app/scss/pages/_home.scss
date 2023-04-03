@@ -1,0 +1,1746 @@
+#how-work {
+  @include media(mobile) {
+    margin-bottom: 50px;
+    margin-top: 25px;
+  }
+
+  .imagem-shell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include media(mobile) {
+      flex-direction: column;
+    }
+
+    @include media(desktop) {
+      visibility: hidden;
+    }
+  }
+  .shell {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .imagem-topo{
+    width: 324px;
+    @include media(desktop) {
+      display: none;
+    }
+  }
+
+  .image-text-container {
+    height: 100px;
+  }
+
+  .box-titulo{
+    width: 342px;
+    object-fit: cover;
+    object-position: -25px 0px;
+    position: relative;
+
+    @include media(desktop) {
+      width: 500px;
+    }
+  }
+
+  .shell-text{
+    position: absolute;
+    top: 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include media(desktop) {
+      margin-left: 70px;
+      margin-top: 10px;
+    }
+  }
+
+  .como-funciona {
+    @include fontMontserrat(32px, 700);
+    color: $white;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    @include media(mobile) {
+      @include fontMontserrat(22px, 700);
+      color: $white;
+      line-height: 20px;
+    }
+  }
+
+  .ar-icon {
+    @include fontMontserrat(22px, 700);
+    color: $green;
+    text-transform: uppercase;
+
+    @include media(mobile) {
+      @include fontMontserrat(16px, 700);
+      color: $green;
+      margin: 0 0;
+      line-height: 20px;
+    }
+  }
+
+  .boxes-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include media(mobile) {
+      flex-direction: column;
+    }
+
+    .content-left {
+      width: 44%;
+
+      @include media(mobile) {
+        width: 100%;
+      }
+
+      .saiba-exatamente{
+        height: 60px;
+
+        @include media(desktop) {
+          @include fontMontserrat(18px, 500);
+          color: $black;
+          margin-left: 40px;
+          margin-top: 50px;
+        }
+      }
+
+      .outline-text-container {
+        display: flex;
+        justify-content: right;
+
+        @include media(desktop) {
+          visibility: hidden;
+          display: none;
+        }
+      }
+
+      .box-titulo-h2{
+        margin-top: 40px;
+        height: 100px;
+        width: 342px;
+        object-fit: cover;
+        object-position: 25px 0;
+        position: relative;
+      }
+    
+      .shell-text-h2{
+        position: absolute;
+        top: 220px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+
+      .principais-peças {
+        @include fontMontserrat(30px, 700);
+        color: $black;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    
+        @include media(mobile) {
+          @include fontMontserrat(20px, 700);
+          color: $black;
+          line-height: 20px;
+        }
+      }
+
+      .ar-con {
+        @include fontMontserrat(30px, 700);
+        color: $green;
+        line-height: 30px;
+        text-transform: uppercase;
+    
+        @include media(mobile) {
+          @include fontMontserrat(20px, 700);
+          color: $green;
+          line-height: 30px;
+        }
+      }
+
+      .outline-text-container-desktop {
+        display: flex;
+        justify-content: left;
+
+        @include media(mobile) {
+          visibility: hidden;
+          display: none;
+        }
+
+        .box-titulo-h2-left{
+          margin-top: 100px;
+          margin-bottom: 40px;
+          width: 520px;
+          object-fit: cover;
+          object-position: -20px 0;
+          position: relative;
+          max-width: 120%;
+        }
+
+        .shell-text-h2-left{
+          position: absolute;
+          top: 340px;
+          left: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+        }
+      }
+
+      h2 {
+        @include fontMontserrat(30px, 700);
+        color: $black;
+        margin-bottom: 52px;
+
+        @include media(mobile) {
+          @include fontMontserrat(24px, 700);
+          padding: 0 40px;
+          margin-bottom: 0;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .homeair-mb {
+        @include media(desktop) {
+          display: none;
+        }
+      }
+
+      p {
+        @include fontMontserrat(22px, 500);
+        color: $black;
+        line-height: 30px;
+
+
+        @include media(mobile) {
+          @include fontMontserrat(15px, 500);
+          margin: 0 0 0 10px;
+          padding: 0 10px;
+          text-align: left;
+        }
+
+        @include media(mobile) {
+          line-height: 20px;
+          font-size: 14px;
+
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    .content-right {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: -60px;
+
+      @include media(mobile){
+        display: none;
+        visibility: hidden;
+      }
+
+      .imagem-topo-right {
+        width: 470px;
+      }
+      .ar-separacao{
+        width: 470px;
+      }
+    }
+  }
+  .boxes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    @include media(desktop) {
+      flex-direction: row;
+      justify-content: center;
+      position: absolute;
+      top: 450px;
+      left: 70px;
+    }
+
+    .em-geral {
+      @include fontMontserrat(14px, 500);
+      color: $black;
+      width: 330px;
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      align-items: center;
+
+      @include media(desktop) {
+        flex-direction: row;
+        margin-top: 0;
+      }
+    }
+
+    .evaporador {
+      width: 186px;
+      margin-bottom: 15px;
+
+      @include media(desktop) {
+        width: 150px;
+      }
+    }
+
+    .condensador {
+      width: 130px;
+      margin-bottom: 15px;
+
+      @include media(desktop) {
+        width: 102px;
+      }
+    }
+
+    .sm-box-up, .sm-box-down {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background-image: url("../img/Img-Box-Evaporadora-Mob.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 14px;
+      border-radius: 12px;
+      margin-right: 12.5px;
+      margin: 10px;
+      width: 260px;
+      height: 200px;
+
+
+      @include media(mobile) {
+        width: 300px;
+        height: 250px;
+      }
+
+      p {
+        @include fontMontserrat(22px, 500);
+        margin: 0;
+
+        @include media(mobile) {
+          @include fontMontserrat(18px, 500);
+        }
+
+        &:last-of-type {
+          @include fontMontserrat(17px, 500);
+
+          @include media(mobile) {
+            @include fontMontserrat(13px, 500);
+          }
+        }
+      }
+      .evap-text {
+        color: $white;
+      }
+    }
+
+    .sm-box-down {
+      background-image: url("../img/Img-Box-Condensadora-Mob.png");
+    }
+
+  }
+}
+
+#air-parts {
+
+  @include media(desktop) {
+    margin: 100px 0;
+  }
+
+  .faixa-titulo-container{
+    display: flex;
+  }
+
+  .faixa-titulo{
+    width: 342px;
+    object-fit: cover;
+    object-position: -25px 0px;
+    position: relative;
+
+    @include media(desktop) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  .faixa-titulo-desk{
+    width: 675px;
+    object-fit: cover;
+    object-position: -25px 0px;
+    position: relative;
+
+    @include media(mobile) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  .faixa-titulo-text{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    @include fontMontserrat(16px, 700);
+    text-transform: uppercase;
+    color: $white;
+
+    @include media(desktop) {
+      margin-left: 150px;
+      @include fontMontserrat(18px, 700);
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+
+  .shell{
+    @include media(desktop) {
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+  }
+  .boxes-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 1024px;
+    position: relative;
+
+    @include media(mobile) {
+      flex-direction: column;
+    }
+
+    .bg {
+      width: 900px;
+      margin: 50px 0;
+
+      @include media(mobile) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+
+
+    h2 {
+      @include fontMontserrat(55px, 700);
+      line-height: 64px;
+      color: $lightest-blue;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+
+      @include media(mobile) {
+        @include fontMontserrat(32px, 700);
+        margin: 0;
+        line-height: 30px;
+        color: $lightest-blue;
+        margin-bottom: 20px;
+      }
+
+      span {
+        color: $cold;
+
+        @include media(mobile) {
+          @include fontMontserrat(25px, 700);
+          color: $cold;
+        }
+      }
+    }
+    p {
+      @include fontMontserrat(22px, 500);
+      margin-bottom: 47px;
+
+      @include media(mobile) {
+        @include fontMontserrat(18px, 500);
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .condensadora-container{
+      background-color: $lightest-gray;
+      border-radius: 30px 10px 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 324px;
+
+      @include media(desktop){
+        position: absolute;
+        background-color: transparent;
+      }
+
+      .condensadora-titulo{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        margin-top: 10px;
+
+        .condensadora {
+          @include fontMontserrat(14px, 700);
+          color: $dark-blue;
+          text-transform: uppercase;
+        }
+        
+        .unidade-externa{
+          @include fontMontserrat(14px, 500);
+          color: $black;
+        }
+      }
+      .condensadora-paragrafo{
+        @include fontMontserrat(12px, 500);
+        color: $dark-gray;
+        text-align: left;
+        height: 70px;
+        margin: 10px 0;
+        line-height: normal;
+        width: 310px;
+      }
+      .condensadora-info-container{
+        display: flex;
+        flex-direction: row;
+        width: 310px;
+
+        .destaque-condensadora{
+          width: 36px;
+          height: 36px;
+        }
+
+        .destaque-condensadora-text{
+          color: $marine;
+          @include fontMontserrat(10px, 500);
+          line-height: normal;
+
+          @include media(desktop) {
+            width: 260px;
+          }
+        }
+      }
+    }
+  }
+  .content-left {
+    width: 56%;
+
+    @include media(desktop) {
+      position: absolute;
+      margin-top: 490px;
+      margin-right: -500px;
+    }
+
+    @include media(mobile) {
+      width: 100%;
+    }
+ 
+    .box-air {
+      width: 587px;
+      height: 1005px;
+      padding: 60px;
+      border-radius: 32px;
+      margin: 0 -60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(mobile) {
+        width: 100%;
+        height: 650px;
+        border-radius: 0;
+        margin: 0;
+        padding: 20px;
+      }
+
+      p {
+        @include fontMontserrat(22px, 500);
+        line-height: 33px;
+
+        @include media(mobile) {
+          @include fontMontserrat(18px, 500);
+        }
+
+        span {
+          @include fontMontserrat(40px, 700);
+          color: $gray;
+
+          @include media(mobile) {
+            @include fontMontserrat(22px, 700);
+            color: $gray;
+          }
+        }
+      }
+
+      .title {
+        @include fontMontserrat(40px, 700);
+        margin-bottom: 7.5px;
+
+        @include media(mobile) {
+          @include fontMontserrat(24px, 700);
+        }
+      }
+
+      .bg-mb {
+        padding-top: 10px;
+        height: 623px;
+
+        @include media(desktop) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  .content-right {
+    padding-top: 100px;
+
+    @include media(desktop) {
+      position: absolute;
+      margin-top: -200px;
+      margin-left: -500px;
+    }
+
+
+    @include media(mobile) {
+      display: flex;
+      justify-content: center;
+      padding: 14px;
+      margin-top: 65px;
+      border-radius: 32px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      @include fontMontserrat(22px, 500);
+      line-height: 30px;
+      span {
+        @include fontMontserrat(40px, 700);
+        color: $gray;
+      }
+
+      @include media(mobile) {
+        @include fontMontserrat(14px, 500);
+        line-height: 27px;
+        text-align: right;
+      }
+    }
+
+    .title {
+      @include fontMontserrat(40px, 700);
+      margin-bottom: 7.5px;
+
+      @include media(mobile) {
+        @include fontMontserrat(20px, 700);
+        margin: -46px 0;
+      }
+    }
+
+    .box-condition {
+      width: 587px;
+      height: 804px;
+      padding: 560px 60px 60px;
+      background: rgba($light-blue, 0.05);
+      border-radius: 32px;
+      margin: 0 -60px 12.7px;
+
+      @include media(mobile) {
+        background: none;
+        width: 100%;
+        height: auto;
+        padding: 220px 20px 0px;
+        margin: 0;
+      }
+
+      p {
+        @include media(mobile) {
+          text-align: left;
+          line-height: 20px;
+          margin-bottom: 10px;
+          br {
+            display: none;
+          }
+
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .box-ray {
+      padding: 60px;
+      width: 587px;
+      background: rgba($light-blue, 0.2);
+      border-radius: 32px;
+      margin: 0 -60px;
+
+      @include media(mobile) {
+        width: 100%;
+        margin: 0;
+        display: none;
+      }
+
+      p {
+        @include fontMontserrat(27px, 500);
+        color: $light-blue;
+        line-height: 35px;
+      }
+
+      span {
+        @include fontMontserrat(40px, 700);
+        color: $light-blue;
+      }
+    }
+
+    .evaporadora-container{
+      background-color: $lightest-gray;
+      border-radius: 30px 10px 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 324px;
+      margin-top: 150px;
+
+      .evaporadora-titulo{
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        margin-top: 10px;
+
+        .evaporadora {
+          @include fontMontserrat(14px, 700);
+          color: $dark-blue;
+          text-transform: uppercase;
+        }
+        
+        .unidade-interna{
+          @include fontMontserrat(14px, 500);
+          color: $black;
+        }
+      }
+      .evaporadora-paragrafo{
+        @include fontMontserrat(12px, 500);
+        color: $dark-gray;
+        text-align: left;
+        height: 70px;
+        margin: 10px 0;
+        line-height: normal;
+        width: 310px;
+      }
+    }
+  }
+
+  .box-ray-mb {
+    padding: 30px;
+    width: 100%;
+    background: rgba($light-blue, 0.2);
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    @include media(desktop) {
+      display: none;
+    }
+    .content-box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .box-item {
+      &:first-of-type {
+        width: 75%;
+      }
+    }
+
+    p {
+      @include fontMontserrat(14px, 400);
+      color: $light-blue;
+      line-height: 20px;
+    }
+
+    span {
+      @include fontMontserrat(24px, 700);
+      color: $light-blue;
+    }
+  }
+}
+
+#compressor {
+  background-color: $white;
+  padding-bottom: 20px;
+  .list {
+    margin: 30px 0;
+    padding: 0 20px;
+    li {
+      margin-bottom: 20px;
+      p {
+        @include fontMontserrat(12px, 500);
+        color: $marine;
+
+        strong {
+          @include fontMontserrat(12px, 700);
+          color: $marine;
+        }
+      }
+    }
+
+    @include media(desktop) {
+      display: none;
+    }
+  }
+  .faixa-titulo-container-compressor{
+    display: flex;
+    @include media(desktop) {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .faixa-titulo-compressor{
+    width: 342px;
+    object-fit: cover;
+    object-position: -25px 0px;
+    position: relative;
+
+    @include media(desktop) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  .faixa-titulo-compressor-desk{
+    width: 675px;
+    object-fit: cover;
+    object-position: -25px 0px;
+    position: relative;
+
+    @include media(mobile) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  .faixa-titulo-compressor-text{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    @include fontMontserrat(16px, 700);
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  .compressor-desk {
+    margin: -140px 0;
+    width: 900px;
+    @include media(mobile) {
+      display: none;
+    }
+  }
+
+  .compressor-images{
+    display: flex;
+    justify-content: center;
+  }
+
+  .compressor-mb {
+    margin: 0;
+    transform: scale(0.9);
+    width: 324px;
+
+    @include media(desktop) {
+      display: none;
+    }
+  }
+}
+
+#economia {
+  background-color: $white;
+  .shell{
+    .outline-text-container {
+      display: flex;
+      justify-content: right;
+
+      @include media(desktop) {
+        display: none;
+        visibility: hidden;
+      }
+
+      .box-titulo-h2{
+        margin-top: 40px;
+        height: 100px;
+        width: 342px;
+        object-fit: cover;
+        object-position: 25px 0;
+        position: relative;
+      }
+    
+      .shell-text-h2{
+        position: absolute;
+        margin-top: 60px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .principais-peças {
+          @include fontMontserrat(100px, 700);
+          color: $white;
+          line-height: 138px;
+          text-transform: uppercase;
+      
+          @include media(mobile) {
+            @include fontMontserrat(20px, 700);
+            color: $black;
+            line-height: 20px;
+          }
+        }
+
+        .ar-con {
+          @include fontMontserrat(100px, 700);
+          color: $white;
+          line-height: 138px;
+          text-transform: uppercase;
+      
+          @include media(mobile) {
+            @include fontMontserrat(20px, 700);
+            color: $green;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .outline-text-container-desktop {
+      display: flex;
+      justify-content: left;
+
+      @include media(mobile) {
+        visibility: hidden;
+        display: none;
+      }
+
+      .box-titulo-h2-left{
+        margin-top: 100px;
+        margin-bottom: 40px;
+        width: 520px;
+        object-fit: cover;
+        object-position: -20px 0;
+        position: relative;
+        max-width: 120%;
+      }
+
+      .shell-text-h2-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: -450px;
+
+        .principais-peças {
+          @include fontMontserrat(30px, 700);
+          color: $black;
+          line-height: 40px;
+          text-transform: uppercase;
+        }
+
+        .ar-con {
+          @include fontMontserrat(30px, 700);
+          color: $green;
+          line-height: 40px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .economia-shell{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .economia-text-container{
+        padding: 20px;
+        @include fontMontserrat(14px, 500);
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media(desktop) {
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-around;
+          position: absolute;
+          margin-top: -150px;
+        }
+
+        .economia-text {
+          @include media(desktop) {
+            width: 370px;
+            @include fontMontserrat(18px, 500);
+          }
+        }
+
+        .content-right{
+
+          @include media(desktop) {
+            display: flex;
+            align-items: flex-end;
+          }
+
+          .foto-economia{
+            margin: 20px 0;
+            width: 324px;
+
+            @include media(desktop) {
+              width: 444px;
+            }
+          }
+
+          .ar-separacao-economia{
+            position: absolute;
+            margin-left: -100px;
+            width: 750px;
+
+            @include media(mobile) {
+              visibility: hidden;
+              display: none;
+            }
+          }
+        }
+      }
+
+      .economia-shell-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @include media(desktop){
+          margin-top: 300px;
+          flex-direction: row;
+        }
+        .comparativo-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .comparativo{
+            text-align: center;
+            @include fontMontserrat(12px, 700);
+            color: $black;
+          }
+          .grafico-economia{
+            width: 324px;
+          }
+          .clique{
+            text-align: center;
+            @include fontMontserrat(10px, 500);
+            color: $black;
+            margin-bottom: 20px;
+          }
+        }
+        .economia-paragrafo{
+          @include fontMontserrat(14px, 500);
+          color: $black;
+          text-align: left;
+          width: 324px;
+          margin: 20px 0;
+
+          @include media(desktop) {
+            @include fontMontserrat(18px, 500);
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+#account {
+  background-color: $white;
+  .shell {
+    .faixa-titulo-container-account{
+      display: flex;
+
+      .faixa-titulo-account{
+        width: 342px;
+        object-fit: cover;
+        object-position: -25px 0px;
+        position: relative;
+
+        @include media(desktop) {
+          visibility: hidden;
+          display: none;
+        }
+      }
+
+      .faixa-titulo-account-desk{
+        width: 675px;
+        object-fit: cover;
+        object-position: -25px 0px;
+        position: relative;
+    
+        @include media(mobile) {
+          visibility: hidden;
+          display: none;
+        }
+      }
+    
+      .faixa-titulo-account-text{
+        position: absolute;
+        width: 275px;
+        margin-top: 2px;
+        margin-left: 10px;
+        @include fontMontserrat(16px, 700);
+        text-transform: uppercase;
+        color: $white;
+
+        @include media(desktop) {
+          width: 500px;
+          margin-left: 100px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .account-data-desk {
+    padding: 90px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include media(mobile) {
+      visibility: hidden;
+      display: none;
+    }
+    .icon-search{
+      width: 260px;
+      height: 140px;
+    }
+    .lupa-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .lupa-text-content{
+        @include fontMontserrat(14px, 500);
+        text-align: left;
+        color: $black;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .account-data-main-text{
+        @include fontMontserrat(16px, 500);
+        text-align: left;
+        color: $black;
+        margin-bottom: 10px
+      }
+      .potencia-kwh{
+        @include fontMontserrat(40px, 700);
+        text-align: left;
+        color: $blue;
+        margin-bottom: 10px;
+      }
+      .potencia-btu{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        flex-direction: column;
+
+        .numeros-potencia{
+          @include fontMontserrat(40px, 700);
+          text-align: left;
+          color: $blue;
+        }
+        .unidade-potencia{
+          @include fontMontserrat(30px, 700);
+          text-align: left;
+          color: $blue;
+        }
+      }
+      .consumo-medio{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .numeros-hora-consumo{
+          @include fontMontserrat(80px, 700);
+          text-align: left;
+          color: $blue;
+        }
+        .texto-consumo{
+          @include fontMontserrat(30px, 700);
+          text-align: left;
+          color: $blue;
+        }
+      }
+      .main-text-container{
+        display: flex;
+  
+        .container-one{
+          display: flex;
+          flex-direction: column;
+          width: 260px;
+        }
+        .container-two{
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+        }
+      }
+    }
+
+  }
+  .account-data-mb {
+    padding: 90px 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(mobile) {
+      padding: 36px 25px;
+    }
+    @include media(desktop) {
+      visibility: hidden;
+      display: none;
+    }
+    .lupa-text{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .icon-search{
+        width: 100px;
+        height: 75px;
+      }
+      .lupa-text-content{
+        @include fontMontserrat(14px, 500);
+        text-align: left;
+        color: $black;
+        margin-left: 20px
+      }
+    }
+    .account-data-main-text{
+      @include fontMontserrat(16px, 500);
+      text-align: left;
+      color: $black;
+      margin-bottom: 10px
+    }
+    .potencia-kwh{
+      @include fontMontserrat(40px, 700);
+      text-align: left;
+      color: $blue;
+      margin-bottom: 10px;
+    }
+    .potencia-btu{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .numeros-potencia{
+        @include fontMontserrat(40px, 700);
+        text-align: left;
+        color: $blue;
+      }
+      .unidade-potencia{
+        @include fontMontserrat(30px, 700);
+        text-align: left;
+        color: $blue;
+      }
+    }
+    .consumo-medio{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .numeros-hora-consumo{
+        @include fontMontserrat(40px, 700);
+        text-align: left;
+        color: $blue;
+      }
+      .texto-consumo{
+        @include fontMontserrat(30px, 700);
+        text-align: left;
+        color: $blue;
+      }
+    }
+  }
+    .content-money {
+      display: flex;
+      margin-bottom: 70px;
+      align-items: center;
+      justify-content: space-around;
+
+      @include media(mobile) {
+        flex-direction: column;
+      }
+
+      .vs-image-container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .vs-image{
+          width: 64px;
+          height: 53px;
+        }
+      }
+
+      .box-money {
+        position: relative;
+        height: 330px;
+        width: 324px;
+        margin-bottom: 20px;
+
+
+        .title {
+          text-transform: uppercase;
+          @include fontMontserrat(22px, 700);
+          color: $black;
+          position: absolute;
+          line-height: 26px;
+          margin-left: 20px;
+  
+          @include media(mobile) {
+            @include fontMontserrat(18px, 700);
+            margin-bottom: 60px;
+            line-height: 19px;
+          }
+  
+          span {
+            display: block;
+            text-transform: uppercase;
+            @include fontMontserrat(40px, 700);
+  
+            @include media(mobile) {
+              @include fontMontserrat(33px, 700);
+            }
+          }
+        }
+
+        .image-money-left{
+          position: absolute;
+          width: 325px;
+          height: 313px;
+        }
+  
+        .money {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          margin-left: 170px;
+          margin-top: 100px;
+          span {
+            @include fontMontserrat(80px, 700);
+            color: $red;
+  
+            @include media(mobile) {
+              @include fontMontserrat(26px, 700);
+              color: $red;
+            }
+          }
+          .custo-mensal{
+            @include fontMontserrat(12px, 500);
+            color: $red;
+          }
+          .money-valor{
+            @include fontMontserrat(40px, 700);
+            color: $red;
+          }
+        }
+
+        .image-money-right{
+          position: absolute;
+          width: 325px;
+          height: 313px;
+        }
+        .money-right {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          margin-left: 170px;
+          margin-top: 100px;
+          span {
+            @include fontMontserrat(80px, 700);
+            color: $green;
+  
+            @include media(mobile) {
+              @include fontMontserrat(26px, 700);
+              color: $green;
+            }
+          }
+          .custo-mensal-right{
+            @include fontMontserrat(12px, 500);
+            color: $green;
+          }
+          .money-valor-right{
+            @include fontMontserrat(40px, 700);
+            color: $green;
+          }
+        }
+      }
+      .box-econ-ray{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 324px;
+        height: 341px;
+
+        .econ{
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 120px;
+          margin-left: 140px;
+
+          .econ-main-text{
+            @include fontMontserrat(12px, 700);
+            color: $dark-blue;
+            width: 130px;
+          }
+          .econ-number{
+            @include fontMontserrat(50px, 700);
+            color: $water-blue;
+          }
+          .econ-text{
+            @include fontMontserrat(16px, 700);
+            color: $water-blue;
+          }
+        }
+        .little-text{
+          position: absolute;
+          width: 270px;
+          @include fontMontserrat(10px, 500);
+          color: $dark-gray;
+          margin-top: 290px;
+          margin-left: 25px;
+        }
+      }
+    }
+    .buy {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(desktop) {
+        visibility: hidden;
+        display: none;
+      }
+
+      .buy-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $ice;
+        width: 324px;
+
+        p{
+          @include fontMontserrat(14px, 500);
+          color: $black;
+          width: 268px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .economia-por-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          span{
+            @include fontMontserrat(23px, 700);
+            color: $black;
+            text-align: center;
+          }
+
+          .coin-number{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+  
+            .coin-image{
+              width: 35px;
+              height: 48px;
+              margin-right: 10px;
+            }
+            p{
+              @include fontMontserrat(40px, 700);
+              color: $green;
+              width: 210px;
+            }
+          }
+        }
+      }
+
+      .overlay-buy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid $cold;
+        margin-bottom: 10px;
+
+        span {
+          @include fontMontserrat(12px, 500);
+          color: $black;
+          margin: 20px 0;
+          text-align: center
+        }
+
+        p {
+          @include fontMontserrat(22px, 500);
+          margin-bottom: 40px;
+        }
+  
+        .buy-content {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 22px;
+
+  
+          @include media(mobile) {
+            flex-direction: column;
+          }
+  
+          .item {
+            width: 100%;
+            text-align: center;
+
+  
+            p {
+              @include fontMontserrat(22px, 700);
+              margin-top: 20px;
+            }
+          }
+        }
+        p{
+          @include fontMontserrat(10px, 500);
+          color: $cold;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .buy-desk {
+      margin: 0 20px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      background-color: $ice;
+      align-items: center;
+
+      @include media(mobile) {
+        visibility: hidden;
+        display: none;
+      }
+      p{
+        @include fontMontserrat(16px, 500);
+        color: $black;
+        width: 650px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .buy-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p{
+          @include fontMontserrat(14px, 500);
+          color: $black;
+          width: 268px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .economia-por-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 30px;
+
+          span{
+            @include fontMontserrat(23px, 700);
+            color: $black;
+            text-align: center;
+          }
+
+          .coin-number{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+  
+            .coin-image{
+              width: 35px;
+              height: 48px;
+              margin-right: 10px;
+            }
+            p{
+              @include fontMontserrat(40px, 700);
+              color: $green;
+              width: 210px;
+            }
+          }
+        }
+      }
+
+      .overlay-buy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid $cold;
+        margin-bottom: 10px;
+
+        span {
+          @include fontMontserrat(12px, 500);
+          color: $black;
+          margin: 20px 0;
+          text-align: center
+        }
+
+        p {
+          @include fontMontserrat(22px, 500);
+          margin-bottom: 40px;
+        }
+  
+        .buy-content {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 22px;
+
+  
+          @include media(mobile) {
+            flex-direction: column;
+          }
+  
+          .item {
+            text-align: center;
+            scale: 0.9;
+
+            img {
+              height: 54px;
+            }
+
+  
+            p {
+              @include fontMontserrat(12px, 700);
+              margin-top: 20px;
+              width: auto;
+            }
+          }
+        }
+        p{
+          @include fontMontserrat(10px, 500);
+          color: $cold;
+          margin: 10px 0;
+        }
+      }
+
+
+    }
+
+    .instalacao-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media(desktop) {
+        display: none;
+        visibility: hidden;
+      }
+
+      .image-logo{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        .instalacao-image{
+          width: 156px;
+          height: 157px;
+        }
+        .agyx-logo{
+          width: 156px;
+          height: 57px;
+          margin-left: 10px;
+        }
+      }
+
+      p{
+        @include fontMontserrat(16px, 500);
+        color: $black;
+        width: 320px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .instalacao-box-desk{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      @include media(mobile) {
+        display: none;
+        visibility: hidden;
+      }
+
+      .image-logo{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        .instalacao-image{
+          width: 352px;
+        }
+      }
+      .wind-agyx{
+        width: 72px;
+        margin: 0 20px;
+      }
+      .instalacao-text{
+        .agyx-logo{
+          width: 260px;
+        }
+        p{
+          @include fontMontserrat(16px, 500);
+          color: $black;
+          width: 550px;
+          margin-bottom: 20px;
+        }
+      }
+
+
+    }
+}
+

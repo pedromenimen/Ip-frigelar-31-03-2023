@@ -1,0 +1,26 @@
+.footer {
+  background: linear-gradient(to bottom, #003666 85%, #5fac28 15%);
+  height: 327px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media(mobile) {
+    height: 160px;
+  }
+
+  img {
+    @include media(mobile) {
+      transform: scale(0.5);
+    }
+  }
+
+  p{
+    @include fontMontserrat(10px, 500);
+    color: $white;
+    text-align: center;
+    width: 270px;
+  }
+}

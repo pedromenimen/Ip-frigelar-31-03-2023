@@ -1,0 +1,27 @@
+// Segoe UI
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat";
+  color: $gray;
+  font-display: swap;
+}
+
+// scrollbar
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $gray;
+}
